@@ -55,3 +55,6 @@ BEGIN
         CREATE TYPE user_role AS ENUM ('EMPLOYEE', 'TEAM_LEADER', 'HR', 'HIGHER_OFFICIAL');
     END IF;
 END$$;
+
+
+hjgasjkfgasjkfhkl
