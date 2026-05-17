@@ -1,0 +1,289 @@
+Initialized native services in: C:\Users\yoges\.gradle\native
+Initialized jansi services in: C:\Users\yoges\.gradle\native
+Found daemon DaemonInfo{pid=6384, address=[6af1ab6b-5704-4c47-9fb8-63f668db6c57 port:58657, addresses:[/127.0.0.1]], state=Idle, lastBusy=1775651448896, context=DefaultDaemonContext[uid=24172a90-6899-4385-9d24-8e99cf096788,javaHome=C:\Program Files\Java\jdk-25,javaVersion=25,javaVendor=Oracle Corporation,daemonRegistryDir=C:\Users\yoges\.gradle\daemon,pid=6384,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]} however its context does not match the desired criteria.
+JVM is incompatible.
+Wanted: DaemonRequestContext{jvmCriteria=Compatible with Java 21, any vendor, nativeImageCapable=false (from gradle/gradle-daemon-jvm.properties), daemonOpts=[-Xmx2048m, -Dfile.encoding=UTF-8, -Duser.country=US, -Duser.language=en, -Duser.variant], applyInstrumentationAgent=true, nativeServicesMode=ENABLED, priority=NORMAL}
+Actual: DefaultDaemonContext[uid=24172a90-6899-4385-9d24-8e99cf096788,javaHome=C:\Program Files\Java\jdk-25,javaVersion=25,javaVendor=Oracle Corporation,daemonRegistryDir=C:\Users\yoges\.gradle\daemon,pid=6384,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+
+  Looking for a different daemon...
+The client will now receive all logging from the daemon (pid: 2980). The daemon log file: C:\Users\yoges\.gradle\daemon\9.3.1\daemon-2980.out.log
+Starting 6th build in daemon [uptime: 3 mins 24.202 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 2 GiB]
+Using 12 worker leases.
+Operational build model parameters: {requiresToolingModels=false, parallelProjectExecution=false, configureOnDemand=false, configurationCache=false, configurationCacheParallelStore=false, configurationCacheParallelLoad=true, isolatedProjects=false, parallelProjectConfiguration=false, intermediateModelCache=false, parallelToolingApiActions=false, invalidateCoupledProjects=false, modelAsProjectDependency=false, resilientModelBuilding=false}
+Now considering [C:\Users\yoges\OneDrive\Documents\TM] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Resolved plugin [id: 'org.gradle.toolchains.foojay-resolver-convention', version: '1.0.0']
+Settings evaluated using settings file 'C:\Users\yoges\OneDrive\Documents\TM\settings.gradle.kts'.
+Projects loaded. Root project using build file 'C:\Users\yoges\OneDrive\Documents\TM\build.gradle.kts'.
+Included projects: [root project 'TaskManager', project ':app']
+
+> Configure project :
+Evaluating root project 'TaskManager' using build file 'C:\Users\yoges\OneDrive\Documents\TM\build.gradle.kts'.
+Resolved plugin [id: 'com.android.application', version: '9.1.0', apply: false]
+Resolved plugin [id: 'org.jetbrains.kotlin.android', version: '2.2.10', apply: false]
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.2.10', apply: false]
+Resolved plugin [id: 'com.google.dagger.hilt.android', version: '2.57.1', apply: false]
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.serialization', version: '2.2.10', apply: false]
+
+> Configure project :app
+Evaluating project ':app' using build file 'C:\Users\yoges\OneDrive\Documents\TM\app\build.gradle.kts'.
+Resolved plugin [id: 'com.android.application', version: '9.1.0']
+Resolved plugin [id: 'org.jetbrains.kotlin.android', version: '2.2.10']
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.compose', version: '2.2.10']
+Resolved plugin [id: 'com.google.dagger.hilt.android', version: '2.57.1']
+Resolved plugin [id: 'org.jetbrains.kotlin.plugin.serialization', version: '2.2.10']
+Resolved plugin [id: 'org.jetbrains.kotlin.kapt']
+Resolved plugin [id: 'kotlin-parcelize']
+WARNING: The option setting 'android.usesSdkInManifest.disallowed=false' is deprecated.
+The current default is 'true'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+WARNING: The option setting 'android.sdk.defaultTargetSdkToCompileSdkIfUnset=false' is deprecated.
+The current default is 'true'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+WARNING: The option setting 'android.enableAppCompileTimeRClass=false' is deprecated.
+The current default is 'true'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+WARNING: The option setting 'android.builtInKotlin=false' is deprecated.
+The current default is 'true'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+WARNING: The option setting 'android.newDsl=false' is deprecated.
+The current default is 'true'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+WARNING: The option setting 'android.r8.optimizedResourceShrinking=false' is deprecated.
+The current default is 'true'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+WARNING: The option setting 'android.defaults.buildfeatures.resvalues=true' is deprecated.
+The current default is 'false'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+Using default execution profile
+Build 3bbf2e9b-690d-45da-bef2-2e85b2fdadd7 is started
+Using Kotlin Gradle Plugin gradle813 variant
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+Detected Android Gradle Plugin compose compiler configuration
+All projects evaluated.
+Task path ':app:kaptDebugKotlin' matched project ':app'
+Task name matched 'kaptDebugKotlin'
+Selected primary task 'kaptDebugKotlin' from project :app
+Tasks to be executed: [task ':app:checkKotlinGradlePluginConfigurationErrors', task ':app:preBuild', task ':app:preDebugBuild', task ':app:generateDebugBuildConfig', task ':app:checkDebugAarMetadata', task ':app:generateDebugResValues', task ':app:mapDebugSourceSetPaths', task ':app:processDebugNavigationResources', task ':app:compileDebugNavigationResources', task ':app:generateDebugResources', task ':app:mergeDebugResources', task ':app:packageDebugResources', task ':app:parseDebugLocalResources', task ':app:createDebugCompatibleScreenManifests', task ':app:extractDeepLinksDebug', task ':app:processDebugMainManifest', task ':app:processDebugManifest', task ':app:processDebugManifestForPackage', task ':app:processDebugResources', task ':app:kaptGenerateStubsDebugKotlin', task ':app:kaptDebugKotlin']
+Tasks that were excluded: []
+Resolve mutations for :app:checkKotlinGradlePluginConfigurationErrors (Thread[#590,Execution worker,5,main]) started.
+:app:checkKotlinGradlePluginConfigurationErrors (Thread[#590,Execution worker,5,main]) started.
+
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+Skipping task ':app:checkKotlinGradlePluginConfigurationErrors' as task onlyIf 'errorDiagnostics are present' is false.
+Resolve mutations for :app:preBuild (Thread[#590,Execution worker,5,main]) started.
+:app:preBuild (Thread[#590,Execution worker,5,main]) started.
+
+> Task :app:preBuild UP-TO-DATE
+Skipping task ':app:preBuild' as it has no actions.
+Resolve mutations for :app:preDebugBuild (Thread[#590,Execution worker,5,main]) started.
+:app:preDebugBuild (Thread[#590,Execution worker,5,main]) started.
+
+> Task :app:preDebugBuild UP-TO-DATE
+Skipping task ':app:preDebugBuild' as it has no actions.
+Resolve mutations for :app:generateDebugBuildConfig (Thread[#590,Execution worker,5,main]) started.
+:app:generateDebugBuildConfig (Thread[#589,included builds,5,main]) started.
+
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+Caching disabled for task ':app:generateDebugBuildConfig' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugBuildConfig' as it is up-to-date.
+Resolve mutations for :app:checkDebugAarMetadata (Thread[#589,included builds,5,main]) started.
+:app:checkDebugAarMetadata (Thread[#589,included builds,5,main]) started.
+
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+Caching disabled for task ':app:checkDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:checkDebugAarMetadata' as it is up-to-date.
+Resolve mutations for :app:generateDebugResValues (Thread[#589,included builds,5,main]) started.
+:app:generateDebugResValues (Thread[#589,included builds,5,main]) started.
+
+> Task :app:generateDebugResValues UP-TO-DATE
+Caching disabled for task ':app:generateDebugResValues' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugResValues' as it is up-to-date.
+Resolve mutations for :app:mapDebugSourceSetPaths (Thread[#589,included builds,5,main]) started.
+:app:mapDebugSourceSetPaths (Thread[#589,included builds,5,main]) started.
+
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+Caching disabled for task ':app:mapDebugSourceSetPaths' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:mapDebugSourceSetPaths' as it is up-to-date.
+Resolve mutations for :app:processDebugNavigationResources (Thread[#589,included builds,5,main]) started.
+:app:processDebugNavigationResources (Thread[#589,included builds,5,main]) started.
+
+> Task :app:processDebugNavigationResources UP-TO-DATE
+Caching disabled for task ':app:processDebugNavigationResources' because:
+  Build cache is disabled
+Skipping task ':app:processDebugNavigationResources' as it is up-to-date.
+Resolve mutations for :app:compileDebugNavigationResources (Thread[#589,included builds,5,main]) started.
+:app:compileDebugNavigationResources (Thread[#589,included builds,5,main]) started.
+
+> Task :app:compileDebugNavigationResources UP-TO-DATE
+Caching disabled for task ':app:compileDebugNavigationResources' because:
+  Build cache is disabled
+Skipping task ':app:compileDebugNavigationResources' as it is up-to-date.
+Resolve mutations for :app:generateDebugResources (Thread[#589,included builds,5,main]) started.
+:app:generateDebugResources (Thread[#589,included builds,5,main]) started.
+
+> Task :app:generateDebugResources UP-TO-DATE
+Caching disabled for task ':app:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugResources' as it is up-to-date.
+Resolve mutations for :app:mergeDebugResources (Thread[#589,included builds,5,main]) started.
+:app:mergeDebugResources (Thread[#589,included builds,5,main]) started.
+
+> Task :app:mergeDebugResources UP-TO-DATE
+Caching disabled for task ':app:mergeDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:mergeDebugResources' as it is up-to-date.
+Resolve mutations for :app:packageDebugResources (Thread[#589,included builds,5,main]) started.
+:app:packageDebugResources (Thread[#589,included builds,5,main]) started.
+
+> Task :app:packageDebugResources UP-TO-DATE
+Caching disabled for task ':app:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:packageDebugResources' as it is up-to-date.
+Resolve mutations for :app:parseDebugLocalResources (Thread[#589,included builds,5,main]) started.
+:app:parseDebugLocalResources (Thread[#589,included builds,5,main]) started.
+
+> Task :app:parseDebugLocalResources UP-TO-DATE
+Caching disabled for task ':app:parseDebugLocalResources' because:
+  Build cache is disabled
+Skipping task ':app:parseDebugLocalResources' as it is up-to-date.
+Resolve mutations for :app:createDebugCompatibleScreenManifests (Thread[#589,included builds,5,main]) started.
+:app:createDebugCompatibleScreenManifests (Thread[#589,included builds,5,main]) started.
+
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+Caching disabled for task ':app:createDebugCompatibleScreenManifests' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:createDebugCompatibleScreenManifests' as it is up-to-date.
+Resolve mutations for :app:extractDeepLinksDebug (Thread[#589,included builds,5,main]) started.
+:app:extractDeepLinksDebug (Thread[#589,included builds,5,main]) started.
+
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+Caching disabled for task ':app:extractDeepLinksDebug' because:
+  Build cache is disabled
+Skipping task ':app:extractDeepLinksDebug' as it is up-to-date.
+Resolve mutations for :app:processDebugMainManifest (Thread[#589,included builds,5,main]) started.
+:app:processDebugMainManifest (Thread[#589,included builds,5,main]) started.
+
+> Task :app:processDebugMainManifest UP-TO-DATE
+Caching disabled for task ':app:processDebugMainManifest' because:
+  Build cache is disabled
+Skipping task ':app:processDebugMainManifest' as it is up-to-date.
+Resolve mutations for :app:processDebugManifest (Thread[#589,included builds,5,main]) started.
+:app:processDebugManifest (Thread[#589,included builds,5,main]) started.
+
+> Task :app:processDebugManifest UP-TO-DATE
+Caching disabled for task ':app:processDebugManifest' because:
+  Build cache is disabled
+Skipping task ':app:processDebugManifest' as it is up-to-date.
+Resolve mutations for :app:processDebugManifestForPackage (Thread[#589,included builds,5,main]) started.
+:app:processDebugManifestForPackage (Thread[#589,included builds,5,main]) started.
+
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+Custom actions are attached to task ':app:processDebugManifestForPackage'.
+Caching disabled for task ':app:processDebugManifestForPackage' because:
+  Build cache is disabled
+Skipping task ':app:processDebugManifestForPackage' as it is up-to-date.
+Resolve mutations for :app:processDebugResources (Thread[#589,included builds,5,main]) started.
+:app:processDebugResources (Thread[#589,included builds,5,main]) started.
+
+> Task :app:processDebugResources UP-TO-DATE
+Caching disabled for task ':app:processDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:processDebugResources' as it is up-to-date.
+Resolve mutations for :app:kaptGenerateStubsDebugKotlin (Thread[#589,included builds,5,main]) started.
+:app:kaptGenerateStubsDebugKotlin (Thread[#589,included builds,5,main]) started.
+
+> Task :app:kaptGenerateStubsDebugKotlin
+Adding -Xuse-inline-scopes-numbers Kotlin compiler flag for task :app:compileDebugAndroidTestKotlin
+Caching disabled for task ':app:kaptGenerateStubsDebugKotlin' because:
+  Build cache is disabled
+Task ':app:kaptGenerateStubsDebugKotlin' is not up-to-date because:
+  Value of input property 'compilerOptions.freeCompilerArgs' has changed for task ':app:kaptGenerateStubsDebugKotlin'
+The input changes require a full rebuild for incremental task ':app:kaptGenerateStubsDebugKotlin'.
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\java', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\java', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\java', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\main\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\main\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\main\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\main\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\main\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\main\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\java', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\java', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\java', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\java', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\main\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\java', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\java', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\java', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\main\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\java', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\java', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\java', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\main\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\main\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\main\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\main\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\main\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\main\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\java', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\java', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\java', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\java', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\main\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\java', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\java', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\java', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\main\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\main\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\main\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\main\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\main\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\main\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\java', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\java', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\java', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\java', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\main\kotlin', not found
+file or directory 'C:\Users\yoges\OneDrive\Documents\TM\app\src\debug\kotlin', not found
+Using Kotlin/JVM incremental compilation
+[KOTLIN] Kotlin compilation 'jdkHome' argument: null
+i: starting the daemon as: C:\Users\yoges\.antigravity\extensions\redhat.java-1.53.0-win32-x64\jre\21.0.10-win32-x86_64\bin\java -cp C:\Users\yoges\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-compiler-embeddable\2.2.10\6882d39ef03b18879c1a5d2a83c2212361bed5fe\kotlin-compiler-embeddable-2.2.10.jar;C:\Users\yoges\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\2.2.10\30de6faa127a4a012db8e71bf1b9c0a99b1402b2\kotlin-stdlib-2.2.10.jar;C:\Users\yoges\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-script-runtime\2.2.10\712f9bc08f378c13a4a00f0bbb28c76e59183e83\kotlin-script-runtime-2.2.10.jar;C:\Users\yoges\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-reflect\1.6.10\1cbe9c92c12a94eea200d23c2bbaedaf3daf5132\kotlin-reflect-1.6.10.jar;C:\Users\yoges\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-daemon-embeddable\2.2.10\212fd3c2c6e4e5d0f4db3c4191233e2b622380cc\kotlin-daemon-embeddable-2.2.10.jar;C:\Users\yoges\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlinx\kotlinx-coroutines-core-jvm\1.8.0\ac1dc37a30a93150b704022f8d895ee1bd3a36b3\kotlinx-coroutines-core-jvm-1.8.0.jar;C:\Users\yoges\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\13.0\919f0dfe192fb4e063e7dacadee7f8bb9a2672a9\annotations-13.0.jar -Djava.awt.headless=true -Djava.rmi.server.hostname=127.0.0.1 -Xmx2048m -XX:ReservedCodeCacheSize=320m -Dkotlin.environment.keepalive -ea -XX:+UseCodeCacheFlushing -XX:+UseParallelGC -Dkotlin.daemon.initiator.marker.file=C:\Users\yoges\AppData\Local\Temp\kotlin-compiler-in-askanager-7110981174587211824.alive --add-exports java.base/sun.nio.ch=ALL-UNNAMED org.jetbrains.kotlin.daemon.KotlinCompileDaemon --daemon-runFilesPath C:\Users\yoges\AppData\Local\kotlin\daemon --daemon-autoshutdownIdleSeconds=7200 --daemon-compilerClasspath C:\Users\yoges\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-compiler-embeddable\2.2.10\6882d39ef03b18879c1a5d2a83c2212361bed5fe\kotlin-compiler-embeddable-2.2.10.jar;C:\Users\yoges\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\2.2.10\30de6faa127a4a012db8e71bf1b9c0a99b1402b2\kotlin-stdlib-2.2.10.jar;C:\Users\yoges\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-script-runtime\2.2.10\712f9bc08f378c13a4a00f0bbb28c76e59183e83\kotlin-script-runtime-2.2.10.jar;C:\Users\yoges\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-reflect\1.6.10\1cbe9c92c12a94eea200d23c2bbaedaf3daf5132\kotlin-reflect-1.6.10.jar;C:\Users\yoges\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-daemon-embeddable\2.2.10\212fd3c2c6e4e5d0f4db3c4191233e2b622380cc\kotlin-daemon-embeddable-2.2.10.jar;C:\Users\yoges\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlinx\kotlinx-coroutines-core-jvm\1.8.0\ac1dc37a30a93150b704022f8d895ee1bd3a36b3\kotlinx-coroutines-core-jvm-1.8.0.jar;C:\Users\yoges\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\13.0\919f0dfe192fb4e063e7dacadee7f8bb9a2672a9\annotations-13.0.jar
+i: #1 retrying connecting to the daemon 
+Options for KOTLIN DAEMON: IncrementalCompilationOptions(super=CompilationOptions(compilerMode=INCREMENTAL_COMPILER, targetPlatform=JVM, reportCategories=[0, 3], reportSeverity=2, requestedCompilationResults=[0], kotlinScriptExtensions=[]), sourceChanges=org.jetbrains.kotlin.buildtools.api.SourcesChanges$Unknown@4cd6f347, classpathChanges=NotAvailableForNonIncrementalRun, workingDir=C:\Users\yoges\OneDrive\Documents\TM\app\build\kotlin\kaptGenerateStubsDebugKotlin\cacheable, multiModuleICSettings=MultiModuleICSettings(buildHistoryFile=C:\Users\yoges\OneDrive\Documents\TM\app\build\kotlin\kaptGenerateStubsDebugKotlin\local-state\build-history.bin, useModuleDetection=true), icFeatures=IncrementalCompilationFeatures(usePreciseJavaTracking=true, withAbiSnapshot=false, preciseCompilationResultsBackup=true, keepIncrementalCompilationCachesInMemory=true, enableUnsafeIncrementalCompilationForMultiplatform=false, enableMonotonousIncrementalCompileSetExpansion=true), outputFiles=[C:\Users\yoges\OneDrive\Documents\TM\app\build\tmp\kapt3\incrementalData\debug, C:\Users\yoges\OneDrive\Documents\TM\app\build\tmp\kapt3\stubs\debug, C:\Users\yoges\OneDrive\Documents\TM\app\build\kotlin\kaptGenerateStubsDebugKotlin\cacheable, C:\Users\yoges\OneDrive\Documents\TM\app\build\kotlin\kaptGenerateStubsDebugKotlin\local-state])
+^C
